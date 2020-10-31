@@ -9,7 +9,7 @@ module.exports =  async function play(connection,message,numberOfSong) {
     const id = getYoutubeId(server.queue[numberOfSong]);
     console.log(id);
     
-    const videoDetails = await axios.get(`https://www.googleapis.com/youtube/v3/videos?part=id%2C+snippet&id=${id}&key=AIzaSyDNhtqfdYgOAM8tTiNSAcUWv3cFAkrN5u8`);
+    const videoDetails = await axios.get(`############`);
     const title = await videoDetails.data.items[0]?.snippet?.localized?.title;
     console.log(title);
 
